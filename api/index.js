@@ -23,6 +23,7 @@ const UserDataSchema = new mongoose.Schema({
   userEmergencyNumber: { type: String },
   userNumber: { type: Number },
   userGender: { type: String },
+  userPassword: {type: String},
 });
 
 const UserData =
