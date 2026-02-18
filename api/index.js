@@ -21,7 +21,7 @@ const UserDataSchema = new mongoose.Schema({
   userHeight: { type: Number },
   userWeight: { type: Number },
   userBMI: { type: String },
-  userEmergencyNumber: { type: String },
+  userEmergencyNumber: { type: Number },
   userNumber: { type: Number },
   userGender: { type: String },
   userPassword: {type: String},
