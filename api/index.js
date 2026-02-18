@@ -54,6 +54,19 @@ app.get("/user/:email", async (req, res) => {
   }
 });
 
+// ✅ Add user 
+app.post("/user", async (req, res) => {
+  try {
+    await connectDB();
+    const newData = new UserData(req.body);
+    const saveData = await newData.save();
+    res.status(201).json(saveData);
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+});
+
+
 // ✅ UPDATE USER BY EMAIL
 app.patch("/user/:email", async (req, res) => {
   try {
