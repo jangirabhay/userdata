@@ -14,6 +14,7 @@ async function connectDB() {
 }
 
 const UserDataSchema = new mongoose.Schema({
+  userImage: { type: String },
   userEmail: { type: String, required: true, unique: true },
   userName: { type: String },
   userSurName: { type: String },
