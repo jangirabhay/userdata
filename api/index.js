@@ -25,6 +25,7 @@ const UserDataSchema = new mongoose.Schema({
   userNumber: { type: Number },
   userGender: { type: String },
   userPassword: {type: String},
+  userBloodGroup : {type: String},
 });
 
 const UserData =
